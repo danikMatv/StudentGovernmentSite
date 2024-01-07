@@ -1,0 +1,61 @@
+﻿@using Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Manage.Internal
+@using System.Diagnostics.Eventing.Reader
+@using SGLNU.BLL.DTO
+@using SGLNU.DAL.Entities
+@{
+    Layout = "_Layout";
+}
+
+<section class="services section container" id="services">
+    <h2 class="section__title">Голосування</h2>
+    <a asp-action="Edit" asp-route-id="0" asp-controller="Voting" class="button">
+        <div class="voting-item new">
+            Створити голосування
+        </div>
+    </a>
+    <div class="row">
+        @foreach (VotingDTO item in Model.Votings)
+        {
+            <div class="col-md-4">
+                <div class="voting__card @((item.IsActive ? "active" : "inactive"))">
+                    <div>
+                        <h2>
+                            @item.Title
+                        </h2>
+                        <h3>
+                            @item.Faculty.Name
+                        </h3>
+                        <h4>
+                            Студентське самоврядування – студентська організація, метою якої є вирішення питань студентського життя.
+                            Виконавчим органом студентського самоврядування в Університеті є Студентський уряд.
+                            Для кожного студента-першокурсника важливим кроком є самоорганізація Ми завжди раді вітати нових енергійних студентів,
+                            які бажають працювати в студентському колективі.
+                        </h4>
+                        <a asp-action="View" asp-route-id="@item.Id" asp-controller="Voting" class="voting__button">
+                            <b>Перейти до голосування</b>
+                        </a>
+                        <!--@if (item.IsActive)
+                        {
+                            <a asp-action="DeActivate" asp-route-id="@item.Id" asp-controller="Voting" class="voting__button">
+                                <b>Завершити</b>
+                            </a>
+                        }
+                        else
+                        {
+                            <a asp-action="Activate" asp-route-id="@item.Id" asp-controller="Voting" class="voting__button">
+                                <b>Розпочати</b>
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@item.Id" asp-controller="Voting" class="voting__button">
+                                <b>Редагувати</b>
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" asp-controller="Voting" class="voting__button">
+                                <b>Видалити</b>
+                            </a>
+                        }-->
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+    
