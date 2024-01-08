@@ -66,7 +66,4 @@
   <ItemGroup>
     <Content Remove="wwwroot\img\Structure\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="wwwroot\img\Structure\" />
-  </ItemGroup>
 </Project>

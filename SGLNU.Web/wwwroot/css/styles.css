@@ -211,6 +211,9 @@ body.dark-theme {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
     font-size: var(--h3-font-size);
+    white-space: nowrap;
+    word-break: normal;
+    hyphens: none;
 }
 
 .nav__logo:hover {
