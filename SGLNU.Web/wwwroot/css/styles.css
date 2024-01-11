@@ -158,15 +158,19 @@ body.dark-theme {
   gap: 1.5rem;
 }
 
+.vote__title {
+    font-size: 30px;
+    margin-bottom: 60px;
+}
 /*=============== HEADER ===============*/
 .header {
-  width: 100%;
-  background-color: var(--body-color);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  transition: .5s;
+    width: 100%;
+    background-color: var(--body-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    transition: .5s;
 }
 
 /*=============== NAV ===============*/
@@ -203,8 +207,11 @@ body.dark-theme {
 }
 
 .nav__link, .nav__toggle {
-  color: var(--title-color);
-  font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    white-space: nowrap;
+    word-break: normal;
+    hyphens: none;
 }
 
 .nav__logo {
