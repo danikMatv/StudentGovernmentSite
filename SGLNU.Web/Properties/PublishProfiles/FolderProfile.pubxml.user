@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\Sevka\source\repos\StudentGovernmentSite\SGLNU.Web\../../../SULNU_Builds</_PublishTargetUrl>
-    <History>True|2024-02-06T19:30:43.5698524Z;True|2024-02-06T21:16:13.5647476+02:00;</History>
+    <History>True|2024-02-06T19:36:27.7552829Z;True|2024-02-06T21:30:43.5698524+02:00;True|2024-02-06T21:16:13.5647476+02:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>
