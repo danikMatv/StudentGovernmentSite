@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SGLNU.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+afa9deefdc19b8c75a4a7d794e988030f558d019")]
 [assembly: System.Reflection.AssemblyProductAttribute("SGLNU.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SGLNU.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
